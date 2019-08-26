@@ -1,0 +1,16 @@
+<button class="ui primary basic button">
+<%= link_to "Back to Billboards", billboards_path %>
+</button>
+
+<h1><%= @billboard.name %></h1>
+<hr />
+<p>What would you like to do?</p>
+<%= link_to "Add Artists", new_artist_path(@billboard) %>
+
+<br />
+<%= link_to "Edit Billboard", edit_billboard_path(@billboard) %>
+<br />
+<%= button_to "Delete Billboard", artist_path(@billboard), method: :delete %>
+
+
+
